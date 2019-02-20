@@ -8,6 +8,8 @@ public class Algorytmy {
         System.out.println("Czy doskonała: " + a.perfectNum (6));
         System.out.println("Czy doskonała: " + a.perfectNum (11));
         System.out.println("Czy doskonała: " + a.perfectNum (28));
+        System.out.println("NWD: " + a.getNWD (12, 9));
+        System.out.println("DtB: " + a.decimalToBinary(12));
     }
 
 }

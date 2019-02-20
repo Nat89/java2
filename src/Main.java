@@ -50,4 +50,39 @@ public class Main {
         }
         return num == sum ? true : false;
     }
+    public int getNWD(int x, int y) {
+        int less = x;
+        int greater = y;
+        if (x > y) {
+            less = y;
+            greater = x;
+        }
+        // 2. Iterujemy w petli i sprawdzamy czy dzielnik less jest tez dzielnikiem greater
+        for(int i = less; less > 1; i--){
+            if(less % i == 0 && greater % i == 0){
+                return i;
+            }
+        }
+        return 1;
+    }
+    public String decimalToBinary(int decimal) {
+        String binary = "";
+        while (decimal >= 1) {
+            binary = binary.concat(String.valueOf(decimal % 2));
+            decimal = decimal / 2;
+        }
+        return  binary;
+
+
+    }
+    public boolean isPrimary(int number) {
+        // 1. inicjalizacja licznika podlicznikow
+        // 2 w petli for zliczamy wszystkie liczby naturalne do liczby number kazdorazowo sprawdzajac w instrukcji if czy te liczby sa dzielnikami number
+        // tak - licznik ++
+        // nie = nic
+        // 3 zwracamy true jezeli licznik == 0 : false jezeli licznik > 0
+
+        public boolean int;
+        int 
+    }
 }
